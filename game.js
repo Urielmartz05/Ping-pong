@@ -83,17 +83,17 @@ const ball = {
 let score = 0;
 // Captura de eventos del teclado
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowUp' || e.key === 'w' || e.key === 'W') {
+    if (e.key === 'i' || e.key === 'I') {
         paddle.dy = -paddle.speed;
-    } else if (e.key === 'ArrowDown' || e.key === 's' || e.key === 'S'){
+    } else if (e.key === 'k' || e.key === 'K'){
         paddle.dy = paddle.speed;
     }
 });
 
 document.addEventListener('keyup', (e) => {
     if (
-        e.key === 'ArrowUp' || e.key === "ArrowDown" || 
-        e.key === 'w' || e.key === 's' || e.key === 'W' || e.key === 'S'
+        e.key === 'i' || e.key === 'I' || 
+        e.key === 'k' || e.key === 'K'
     ) {
         paddle.dy = 0;
     }
