@@ -129,6 +129,14 @@ canvas {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
+h2 {
+    margin-bottom: 10px;
+}
+
+#username {
+    margin-bottom: 15px;
+}
+
 p {
     margin-top: 15px;
     color: #aaa;
