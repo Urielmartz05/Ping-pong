@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong vs Pared</title>
+</head>
+<body>
+
+    <dialog id="my-dialog">
+       <form action="" method="post" id="data-form">
+
+            <div class="dialog-content">
+                <label for="name-input">Ingresa tu nombre</label>
+                <input type="text" id="name-input" name="user">
+                
+            </div>
+
+            <div class="level-selection">
+                <button class="level-btn" type="button" data-level="1">1x</button>
+                <button class="level-btn" type="button" data-level="2">2x</button>
+                <button class="level-btn" type="button" data-level="3">3x</button>
+            </div>
+
+       </form>
+
+       <div class="game-option">
+            <button type="submit" class="start-btn" id="start-game">Iniciar</button>
+       </div>
+
+    </dialog>
+
+    <h2>Entrenamiento: Pong vs Pared</h2>
+    <p id="username">Nombre: </p>
+    <canvas id="gameCanvas" width="800" height="450"></canvas>
+    <p>Usa las teclas <b>W</b> / <b>S</b> o las <b>Flechas</b> para mover la paleta.</p>
+
+    <h3>Mejores puntajes</h3>
+    <ol id="score-list"></ol>
+
+    <script src="game.js"></script>
+</body>
+</html>
